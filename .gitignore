@@ -12,5 +12,7 @@ logs
 results
 
 node_modules
+public/assets
 
+.DS_Store
 npm-debug.log

@@ -1,0 +1,14 @@
+- title= sd.SITE_TITLE
+- description= sd.SITE_DESCRIPTION
+title= title
+meta( property="og:title", content=title )
+meta( name="description", content=description )
+meta( property="og:description", content=description )
+meta( property="twitter:description", content=description )
+meta( property="og:type", content="website" )
+meta( property="og:site_name", content=sd.SITE_NAME )
+link( rel="alternate", media=sd.MOBILE_MEDIA_QUERY, href=(sd.CANONICAL_MOBILE_URL + (req ? req.path : "")) )
+link( rel="canonical", href=(sd.APP_URL + (req ? req.path : "")) )
+meta( property="og:url", content=(sd.APP_URL + (req ? req.path : "")) )
+meta( property="og:image", content=(sd.ASSET_PATH + "og_image.jpg") )
+meta( property="twitter:card", content="summary" )

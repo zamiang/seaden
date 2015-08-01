@@ -1,0 +1,11 @@
+//- Common external scripts
+if sd.NODE_ENV != 'test' && sd.BROWSER && sd.BROWSER.family != 'PhantomJS'
+  //- Mixpanel & Google analytics script
+  include ./google_analytics.html
+
+//- Wire up sharify
+if sharify
+  != sharify.script()
+
+//- Add Google's jQuery
+script( src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" )

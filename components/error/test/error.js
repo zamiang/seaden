@@ -21,9 +21,9 @@ describe('#internalError', function() {
   });
 
   it('sends a 500 by default', function() {
-      errorHandler.internalError(new Error("Some blah error"), {},
-                                 { statusCode: 500, send: spy = sinon.spy(), status: status = sinon.stub() });
-      status.args[0][0].should.equal(500);
+    errorHandler.internalError(new Error("Some blah error"), {},
+                               { statusCode: 500, send: spy = sinon.spy(), status: status = sinon.stub() });
+    status.args[0][0].should.equal(500);
   });
 
   it('will look at the errors status', function() {

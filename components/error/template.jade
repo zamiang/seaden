@@ -1,7 +1,8 @@
-extends ../../components/layout/templates/index
+extends ../layout/templates/index.jade
 
 block head
-  include ../../components/layout/templates/common_head
+  include ../layout/templates/common_head
+
 
 append locals
   - assetPackage = 'error_handler'
@@ -12,6 +13,6 @@ block body
       h1 The page you were looking for doesn't exist.
     else
       h1 Internal Error
-      if detail && showDetail
+      if detail
         pre= detail
       p Please contact <a href="mailto:support@seaden.com">support@seaden.com</a> with any questions.

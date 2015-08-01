@@ -13,21 +13,11 @@ module.exports = {
   GOOGLE_ANALYTICS_ID: null
 };
 
-// Iterate over object using a generator expression
-function entries(obj) {
-  return (for (key of Object.keys(obj)) [key, obj[key]]);
-}
-
-for (let [key, value] of entries(module.exports)) {
-  let val = (process.env[key] || val);
+for (let key of Object.keys(module.exports)) {
+  let val = (process.env[key] || module.exports[key]);
   try {
     module.exports[key] = JSON.parse(val);
   } catch (e) {
     module.exports[key] = val;
   }
-}
-
-// Warn if this file is included client-side
-if (window) {
-  alert("WARNING: Do not require config.coffee, please require('sharify').data instead.");
 }

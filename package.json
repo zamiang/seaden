@@ -3,9 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "engines": {
-    "node": "0.10.x"
+    "node": "0.12.2",
+    "npm": "2.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zamiang/seaden.git"
   },
   "scripts": {
+
     "start": "make s"
   },
   "dependencies": {
@@ -14,6 +20,7 @@
     "cookie-parser": "*",
     "body-parser": "*",
     "morgan": "*",
+    "sharify": "*",
 
     "mocha": "*",
 
