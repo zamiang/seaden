@@ -11,7 +11,6 @@
     "url": "git@github.com:zamiang/seaden.git"
   },
   "scripts": {
-
     "start": "make s"
   },
   "dependencies": {
@@ -23,6 +22,10 @@
     "sharify": "*",
 
     "mocha": "*",
+    "mocha-babel": "*",
+    "should": "*",
+    "rewire": "*",
+    "sinon": "*",
 
     "knex": "*",
     "bookshelf" : "*",
@@ -36,6 +39,7 @@
     "jadeify": "*",
 
     "babel": "*",
+    "babel-runtime": "*",
     "superagent": "*",
 
     "jquery": "*",
