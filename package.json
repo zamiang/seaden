@@ -1,0 +1,37 @@
+{
+  "name": "seaden",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "make s"
+  },
+  "dependencies": {
+    "express": "*",
+    "serve-favicon": "*",
+    "cookie-parser": "*",
+    "body-parser": "*",
+    "morgan": "*",
+
+    "mocha": "*",
+
+    "knex": "*",
+    "bookshelf" : "*",
+    "pg": "*",
+
+    "stylus": "*",
+    "nib": "*",
+    "jade": "*",
+
+    "browserify": "*",
+    "jadeify": "*",
+
+    "babel": "*",
+    "superagent": "*",
+
+    "jquery": "*",
+    "underscore": "*"
+  }
+}

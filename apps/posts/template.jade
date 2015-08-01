@@ -1,0 +1,12 @@
+extends ../../components/layout/templates/index
+
+block head
+  include meta
+
+append locals
+  - assetPackage = 'posts'
+
+block body
+  #posts
+    h1
+      | Posts
