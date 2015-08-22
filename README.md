@@ -66,8 +66,8 @@ This is a proof of concept application, not a full web publishing platform. Curr
 scheduling posts
 ??
 
-Other reading
+Other reading:
 
-https://www.mnot.net/cache_docs/
-http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html
-https://gist.github.com/6a68/4971859
+- https://www.mnot.net/cache_docs/
+- http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html
+- https://gist.github.com/6a68/4971859
